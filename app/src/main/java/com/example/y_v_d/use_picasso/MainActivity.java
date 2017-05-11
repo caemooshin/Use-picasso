@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         String imageUri = "https://i.imgur.com/tGbaZCY.jpg";
         //ivBasicImage = (ImageView) findViewById(R.id.ivBasicImage);
+        // 2 image view
         Picasso.with(getApplicationContext()).load(imageUri).into(imageView2);
         Picasso.with(getApplicationContext()).load(imageUri).into(imageView);
 
