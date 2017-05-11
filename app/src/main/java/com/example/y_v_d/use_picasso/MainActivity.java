@@ -6,14 +6,17 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+
 public class MainActivity extends AppCompatActivity {
 
-    ImageView ivBasicImage;
+    //@BindView(R.id.ivBasicImage)
+     ImageView ivBasicImage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //ButterKnife.bind(this);
         String imageUri = "https://i.imgur.com/tGbaZCY.jpg";
         ivBasicImage = (ImageView) findViewById(R.id.ivBasicImage);
         Picasso.with(getApplicationContext()).load(imageUri).into(ivBasicImage);
